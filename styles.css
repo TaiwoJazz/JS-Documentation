@@ -1,0 +1,113 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(35,37,41);
+  color: rgb(226,227,231);
+  position: relative;
+  margin-left: 300px;
+}
+
+#navbar {
+  position: fixed;
+  width: 300px;
+  min-width: 290px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 2px solid rgb(153,162,162);
+}
+
+#navbar header {
+  line-height: 1.5;
+  font-size: 1.8em;
+  padding: 15px 30px;
+  border-bottom: 0.7px solid rgb(153,162,162);
+}
+
+#navbar div {
+  padding: 13px 30px;
+  text-decoration: none;
+  color: rgb(226,227,231);
+  border-bottom: 0.7px solid rgb(153,162,162);
+  cursor: pointer;
+}
+
+#navbar div a {
+  text-decoration: none;
+  color: rgb(226,227,231);
+}
+
+#main-doc {
+  padding: 25px 40px;
+}
+
+.main-section header {
+  padding: px 0;
+  line-height: 1.5;
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 0.96em;
+  line-height: 1.4rem;
+  margin: 20px 0 0 15px;
+}
+
+li {
+  font-size: 0.96em;
+  line-height: 1.4rem;
+  margin: 20px 0 0 40px;
+}
+
+#code-div {
+  background-color: rgb(40,42,54);
+  color: #ffffff;
+  margin: 10px 30px;
+  padding: 20px 15px;
+  width: calc(100% - 100px);
+}
+
+.code {
+  padding-bottom: 12px
+}
+
+#Reference a {
+  color: rgb(227,121,106)
+}
+
+@media (max-width: 815px) {
+  body {
+  position: none;
+  margin-left: 0;
+  border: 0
+}
+  #navbar {
+  position: inherit;
+  width: 100%;
+  min-width: 290px;
+  height: 40%;
+  overflow-y: auto;
+  margin-top: 0;
+  }
+
+  #navbar header {
+  position: sticky;
+  font-size: 1.8em;
+  padding: 15px;
+  text-align: center;
+}
+}
+
+@media (max-height: 680px) {
+  #navbar {
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #navbar header {
+  font-size: 1.7em;
+  }
+}
